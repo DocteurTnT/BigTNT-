@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
-const music = require('discord.js-music-v11')
-const cons = require('consolidate')
 const low = require('lowdb')
-const FileSync = require('lowdb/adapters/FileSync')
 
 const adapter = new FileSync('database.json');
 const db = low(adapter);
