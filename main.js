@@ -40,7 +40,7 @@ function jeux() {
     })
 
 
-bot.login(Mzc1MzgyNjcxOTAxMTk2Mjg5.DN8bxg.3kMkmY5EEtZ-GXGzMma77qioK1M);
+bot.login("Mzc1MzgyNjcxOTAxMTk2Mjg5.DN8bxg.3kMkmY5EEtZ-GXGzMma77qioK1M");
 
 bot.on('message', message => {
 
