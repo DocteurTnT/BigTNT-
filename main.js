@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const low = require('lowdb')
-
-const adapter = new FileSync('database.json');
+const bot = new Discord.Client();
 const db = low(adapter);
 
 
@@ -9,7 +8,6 @@ db.defaults({ histoires: [], xp: [], guilds :[]}).write()
 
 var prefixx = 'st!';
 var prefix = "->";
-var bot = new Discord.Client();
 var randnum = 0;
 var premium = 0;
 var asterix = '*';
@@ -40,7 +38,7 @@ function jeux() {
     })
 
 
-bot.login("Mzc1MzgyNjcxOTAxMTk2Mjg5.DN8bxg.3kMkmY5EEtZ-GXGzMma77qioK1M");
+bot.login(process.env.BOT_TOKEN);
 
 bot.on('message', message => {
 
